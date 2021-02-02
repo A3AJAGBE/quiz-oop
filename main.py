@@ -3,7 +3,7 @@ from question import Question
 from data import question_data
 from brain import QuizBrain
 
-print('The question are either "True" or "False".')
+print('Type "True" or "False" to answer the following questions.')
 
 # Create Question Instance
 question_info = []
@@ -14,4 +14,7 @@ for info in question_data:
 
 # Quiz brain Instance
 quiz_brain = QuizBrain(question_info)
-quiz_brain.generate_question()
+
+# Iterate through the questions
+while quiz_brain.next_question():
+    quiz_brain.generate_question()
