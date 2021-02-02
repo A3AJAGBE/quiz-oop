@@ -2,7 +2,10 @@
 from question import Question
 from data import question_data
 from brain import QuizBrain
+from logo import logo
 
+# Default displays
+print(logo)
 print('Type "True" or "False" to answer the following questions.')
 
 # Create Question Instance
