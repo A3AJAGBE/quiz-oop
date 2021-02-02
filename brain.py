@@ -8,3 +8,9 @@ class QuizBrain:
         self.num += 1
         user = input(f'Q.{self.num} {current.text} ').title()
         return user
+
+    def next_question(self):
+        for _ in self.list:
+            self.generate_question()
+        else:
+            return False
