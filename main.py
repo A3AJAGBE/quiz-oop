@@ -18,3 +18,6 @@ quiz_brain = QuizBrain(question_info)
 # Iterate through the questions
 while quiz_brain.next_question():
     quiz_brain.generate_question()
+
+print('Completed the quiz successfully.')
+print(f'Final score = {quiz_brain.score}/{quiz_brain.num}')
